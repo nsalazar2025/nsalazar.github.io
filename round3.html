@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Round3-4PICS</title>
+    <style>
+        .color1 {
+        width: 60%;
+        height: 375px;
+        background-color: #F68989;
+        float:left;
+      }
+      .color2 {
+        width: 40%;
+        height: 375px;
+        background-color: #C65D7B;
+        float:right;
+      }
+
+      .color3 {
+        width: 40%;
+        height: 525px;
+        background-color: #F6E7D8;
+        float:left;
+      }
+      .color4 {
+        width: 60%;
+        height: 525px;
+        background-color: #874356;
+        float:right;
+      }
+
+      .word {
+          text-align: center;
+          margin-top: 630px;
+          margin-left: 470px;
+          font-size: 50px;
+          color: white;
+          text-shadow: 4px 4px black;
+          font-family: 'Cinzel', serif;
+      }
+
+      .buttons {
+          text-align: center;
+          margin-top: 750px;
+          margin-left: 180px;
+        
+        }
+
+      .button {
+            width: 70px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 25px;
+            padding-left: 25px;
+            font-size: 40px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #F68989;
+            border: solid;
+            border-color: white;
+            border-radius: 15px;
+            box-shadow: 0 9px #C65D7B;
+            font-family: 'Staatliches', cursive;
+            margin-bottom: 10px;
+            font-family: 'Cinzel', serif;
+        
+
+        }
+      
+
+        .button:hover {
+            background-color: #cabbec
+        }
+
+        .button:active {
+            background-color: #cabbec;
+            box-shadow: 0 5px #666;
+            transform: translateY(10px);
+        }
+    
+        .img1{
+            width:225px;
+            height:225px;
+            border-radius:15px;
+            position:absolute;
+            margin-top:125px;
+            margin-left: 450px;
+            border:7px solid black;
+        }
+        .img2{
+            width:225px;
+            height:225px;
+            border-radius:15px;
+            position:absolute;
+            margin-top:125px;
+            margin-left:700px;
+            border:7px solid black;
+        }
+        .img3{
+            width:225px;
+            height:225px;
+            border-radius:15px;
+            position:absolute;
+            margin-top:375px;
+            margin-left:450px;
+            border:7px solid black;
+        }
+        .img4{
+            width:225px;
+            height:225px;
+            border-radius:15px;
+            position:absolute;
+            margin-top:375px;
+            margin-left:700px;
+            border:7px solid black;
+        }
+        .instructions{
+            position:absolute;
+            margin-left:200px;
+            margin-top: 25px;
+            font-family: 'Cinzel', serif;
+            
+        }
+        .instructions1{
+            position:absolute;
+            margin-left:520px;
+            margin-top: 70px;
+            font-family: 'Cinzel', serif;
+        }
+        #N:disabled,
+		#A:disabled,
+		#H:disabled,
+        #T:disabled,
+        #B:disabled,
+        #U:disabled,
+        #D:disabled,
+        #R:disabled,
+        #X:disabled,
+        #G:disabled,
+        #E:disabled,
+		#W:disabled {
+			background-color: #D77FA1;
+		
+		}
+
+        .submit {
+            position: absolute;
+            margin-left: 350px;
+            margin-top: 770px;
+            background-color:#D77FA1;
+            border: solid;
+            border-color: white;
+            border-radius: 20px;
+            box-shadow:  0 9px #D77FA1;
+        }
+        .submit:hover {
+            background-color: #cabbec
+        }
+
+        .submit:active {
+            background-color: #cabbec;
+            box-shadow: 0 5px #666;
+            transform: translateY(10px);
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+           
+        }
+    
+    </style>
+
+    <script>
+        var word = document.getElementById('word').innerHTML;
+
+    function N() {
+        document.getElementById("word").innerHTML += "N";
+        document.getElementById('N').disabled = true;
+    }
+
+    function A() {
+        document.getElementById("word").innerHTML += "A";
+        document.getElementById('A').disabled = true;
+    }
+
+    function H() {
+        document.getElementById("word").innerHTML += "H";
+        document.getElementById('H').disabled = true;
+    }
+
+    function T() {
+        document.getElementById("word").innerHTML += "T";
+        document.getElementById('T').disabled = true;
+    }
+    
+    function B() {
+        document.getElementById("word").innerHTML += "B";
+        document.getElementById('B').disabled = true;
+    }
+    
+    function U() {
+        document.getElementById("word").innerHTML += "U";
+        document.getElementById('U').disabled = true;
+    }
+    
+    function D() {
+        document.getElementById("word").innerHTML += "D";
+        document.getElementById('D').disabled = true;
+    }
+    
+    function R() {
+        document.getElementById("word").innerHTML += "R";
+        document.getElementById('R').disabled = true;
+    }
+    
+    function X() {
+        document.getElementById("word").innerHTML += "X";
+        document.getElementById('X').disabled = true;
+    }
+    
+    function G() {
+        document.getElementById("word").innerHTML += "G";
+        document.getElementById('G').disabled = true;
+    }
+    
+    function E() {
+        document.getElementById("word").innerHTML += "E";
+        document.getElementById('E').disabled = true;
+    }
+    
+    function W() {
+        document.getElementById("word").innerHTML += "W";
+        document.getElementById('W').disabled = true;
+    }
+    
+    var point = 100;
+
+    function submit() {
+        word = document.getElementById('word').innerHTML;
+
+
+    if (word == "Word: NATURE"){                  
+        window.location.assign("meme3.html")
+    }
+    else {
+        point = point;
+    }
+
+    document.getElementById('word').innerHTML = "Word: "
+    document.getElementById('N').disabled = false;
+    document.getElementById('A').disabled = false;
+    document.getElementById('H').disabled = false;
+    document.getElementById('T').disabled = false;
+    document.getElementById('B').disabled = false;
+    document.getElementById('U').disabled = false;
+    document.getElementById('D').disabled = false;
+    document.getElementById('R').disabled = false;
+    document.getElementById('X').disabled = false;
+    document.getElementById('G').disabled = false;
+    document.getElementById('E').disabled = false;
+    document.getElementById('W').disabled = false;
+}
+    </script>
+    </head>
+
+    <body>
+        <h1 class="instructions"><strong>Form the word by using the four pictures given.</strong></h1>
+        <h1 class="instructions1"><strong> Letter Count: 06 </strong></h1>
+        <img class="img1" src="https://www.thespruce.com/thmb/2fz1zlPNq7cj7QkLAtKdqYrKvs0=/3704x2778/smart/filters:no_upscale()/the-difference-between-trees-and-shrubs-3269804-hero-a4000090f0714f59a8ec6201ad250d90.jpg" alt="#">
+        <img class="img2" src="https://miro.medium.com/max/1400/0*DvhGsLxAgfGrHA15" alt="#">
+        <img class="img3" src="https://ggsc.s3.amazonaws.com/images/uploads/Forest_in_Japan.jpg" alt="#">
+        <img class="img4" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/high-angle-view-of-variety-of-succulent-plants-royalty-free-image-1584462052.jpg" alt="#">
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+
+        <div id="word" style="position: absolute;" class="word">Word: </div>
+
+        <div class="buttons" style="position: absolute;">
+          <button style="padding-right: 50px;" class="button" id="N" onclick="N()">N</button>
+          <button style="padding-right: 50px;" class="button" id="A" onclick="A()">A</button>
+          <button style="padding-right: 50px;" class="button" id="H" onclick="H()">H</button>
+          <button style="padding-right: 50px;" class="button" id="T" onclick="T()">T</button> 
+          <button style="padding-right: 50px;" class="button" id="B" onclick="B()">B</button>
+          <button style="padding-right: 50px;" class="button" id="U" onclick="U()">U</button>
+          <button style="padding-right: 50px;" class="button" id="D" onclick="D()">D</button>
+          <button style="padding-right: 50px;" class="button" id="R" onclick="R()">R</button>  
+          <button style="padding-right: 50px;" class="button" id="X" onclick="X()">X</button>
+          <button style="padding-right: 50px;" class="button" id="G" onclick="G()">G</button>
+          <button style="padding-right: 50px;" class="button" id="E" onclick="E()">E</button>
+          <button style="padding-right: 50px;" class="button" id="W" onclick="W()">W</button>   
+
+        </div>
+
+        <div>
+            <button class="submit" onclick="submit()"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL5JREFUSEvtlNENwjAMBc8bsAmMABMxAnQDNoIR6CZsYGSUSFFoE4fQv/Q7vaufXyps/MjGfIagmvCI6BORqu6As4hMeWbdEQX4HTgAk4hcU0mXIIPPwFFEXn8ReOAm+mkCL7woUFXL8paP3AJfFQT4BXgCpyhphZcEVrsHsI+SsLjYlsWFLl3r1R2Er00l9r5V0Q2vLjmT2PkmeFWQ3FKbxJ6vntf+dq6ahknIG1WDuybwQEpnXBP0SIagmt4bfSFQGcRmtsAAAAAASUVORK5CYII=" alt="check"/></button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
